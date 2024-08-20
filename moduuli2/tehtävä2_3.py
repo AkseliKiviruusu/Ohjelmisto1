@@ -1,0 +1,8 @@
+kanta_str = input('Anna suorakulmion kannan pituus: ')
+korkeus_str = input('Anna suorakulmion korkeus: ')
+kanta = float(kanta_str)
+korkeus = float(korkeus_str)
+piiri = (kanta * 2) + (korkeus * 2)
+ala = (kanta * korkeus)
+print("Suorakulmion piiri: " + str(piiri))
+print("Suorakulmion pinta-ala: " + str(ala))

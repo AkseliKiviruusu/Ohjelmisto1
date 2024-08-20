@@ -1,2 +1,2 @@
 kayttaja = input('Anna nimesi: ')
-print("Terve, "+kayttaja+"!")
+print("Terve, " + kayttaja + "!")

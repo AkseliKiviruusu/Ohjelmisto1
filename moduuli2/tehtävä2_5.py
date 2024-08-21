@@ -1,16 +1,14 @@
-gramma = 1
-kilogramma = 1000 * float(gramma)
-luoti = 13.3 * float(gramma)
-naula = 32 * float(luoti)
-leiviska = 20 * float(naula)
+GRAMMA = 1
+KILO = 1000 * GRAMMA
+LUOTI = 13.3 * GRAMMA
+NAULA = 32 * LUOTI
+LEIVISKA = 20 * NAULA
 
-leiviska_massa = input("Anna leiviskät: ")
-naula_massa = input("Anna naulat: ")
-luoti_massa = input("Anna luodit: ")
+leiviskat = float(input("Anna leiviskät: "))
+naulat = float(input("Anna naulat: "))
+luodit = float(input("Anna luodit: "))
 
-grammat = (float(luoti_massa) * float(luoti) +
-                   float(naula_massa) * float(naula) +
-                   float(leiviska_massa) * float(leiviska))
+grammat = (luodit * LUOTI + naulat * NAULA + leiviskat * LEIVISKA)
 kilot = float(grammat) /1000
 massa_kilot = round(float(grammat) // 1000)
 massa_grammat = round((float(kilot) - float(massa_kilot)) * 1000)

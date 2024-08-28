@@ -5,7 +5,7 @@ luku = int(input("Anna luku: "))
 if luku < 2:
     print("Ei ole alkuluku")
 elif luku == 2:
-    print("Ei ole alkuluku")
+    print("On alkuluku")
 else:
     on_alkuluku = True
     for i in range(2, int(math.sqrt(luku)) + 1):

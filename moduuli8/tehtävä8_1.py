@@ -1,3 +1,4 @@
+import config
 import mysql.connector
 
 def get_airport_by_icao(icao):
@@ -11,8 +12,8 @@ yhteys = mysql.connector.connect(
          host = '127.0.0.1',
          port = 3306,
          database = 'flight_game',
-         user = 'akselikiviruusu',
-         password = 'Rm4g9090?',
+         user = config.user,
+         password = config.password,
          autocommit = True
          )
 

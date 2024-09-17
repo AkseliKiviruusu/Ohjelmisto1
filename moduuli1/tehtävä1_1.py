@@ -1,1 +1,1 @@
-print("Hei, Akseli Kiviruusu!")
+print("Moi, Akseli Kiviruusu!")

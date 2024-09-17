@@ -2,13 +2,13 @@ import config
 import mysql.connector
 
 def laske_maara(tyyppi):
-    maara_small_airport = 0
+    maara = 0
 
     for i in range(len(airport_list)):
         if airport_list[i] == (tyyppi):
-            maara_small_airport += 1
+            maara += 1
 
-    print(f"{tyyppi} määrä: {maara_small_airport}")
+    print(f"{tyyppi} määrä: {maara}")
 
 def get_airport_type_by_country_name(country_id):
     sql = """
